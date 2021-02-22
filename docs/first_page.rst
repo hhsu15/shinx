@@ -2,7 +2,7 @@
 First page
 *********************
 
-This is just the first page.
+This is just the first page. Let's test the auto-deplopy!
 
 1. `Some format`
 2. `Some more format`

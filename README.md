@@ -41,7 +41,13 @@ html_theme = "sphinx_rtd_theme"
 
 ## Host documentation on github page
 
-After you push your docs dir to the repo,
+After you push your docs dir to the repo, create a branch called `gh-pages`.
+
+Then just copy everything in the `_build` folder into this branch' root directory,
+once that's done,
 
 1. Go to the github repo -> `settings` -> Github Pages
-2. Select from the dropdown: main - docs
+2. Select from the dropdown: main -> root # since we move everythin in the root
+3. Save it and it will take a few minutes to deploy to url.
+
+Refer to the Makefile for on-going auto-deplopy
