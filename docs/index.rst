@@ -6,7 +6,7 @@
 Welcome to test's documentation!
 ================================
 
-This is a test for sophinx documentation! Let's test if the deployment works!
+This is a test for sophinx documentation! Let's now test if the deployment works!
 
 .. toctree::
    :maxdepth: 2
