@@ -40,3 +40,8 @@ html_theme = "sphinx_rtd_theme"
 ```
 
 ## Host documentation on github page
+
+After you push your docs dir to the repo,
+
+1. Go to the github repo -> `settings` -> Github Pages
+2. Select from the dropdown: main - docs
