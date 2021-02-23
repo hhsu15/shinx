@@ -6,3 +6,4 @@ pkg
 
    example_class
    module_1
+   module_2
