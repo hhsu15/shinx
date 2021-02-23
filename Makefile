@@ -1,5 +1,7 @@
 .PHONY: build gh_pages
 
+all: build gh_pages
+
 build:
 	sphinx-build -b html ./docs ./docs/_build
 
