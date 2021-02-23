@@ -1,3 +1,4 @@
 build
 *.pyc
 docs/_build
+gh-pages
