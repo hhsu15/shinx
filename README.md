@@ -80,6 +80,17 @@ sphinx-build -b html . ./_build
 
 ## To host gh-pages
 
+Ok, there is a better and easier way to do this: Use ghp-import
+
+```bash
+pip install ghp-import
+
+ghp-import docs/_build -p -n  # p means push and n means add .nojekyll file
+
+```
+
+**----My naive attempt----**
+
 Follow this process:
 
 1. Create a sub directory `gh-pages` in your root
@@ -93,3 +104,5 @@ Follow this process:
 9. And then cd into gh-pages/repo and add/commit/push
 
 Refer to `Makefile` for auto deployment.
+
+---
