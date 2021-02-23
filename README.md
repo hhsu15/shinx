@@ -78,4 +78,18 @@ The API docs get generated when you run `sphinx-build -b html . ./_build`. You w
 sphinx-build -b html . ./_build
 ```
 
+## To host gh-pages
+
+Follow this process:
+
+1. Create a sub directory `gh-pages` in your root
+2. Add `gh-pages` in `.gitignore` so it stays in your local
+3. Cd into gh-pages folder and git clone the repo into it
+4. Cd into the repo and checkout a branch called `gh-pages`
+5. Remove main/master branch using `git branch -d main`
+6. Remove everything and push the branch to remote
+7. Now you can go back to the parent directory
+8. Every time you build using sphnix just copy all the build files into the gh-pages/repo
+9. And then cd into gh-pages/repo and add/commit/push
+
 Refer to `Makefile` for auto deployment.

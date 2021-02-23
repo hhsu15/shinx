@@ -1,6 +1,9 @@
-.PHONY: build gh_pages
+.PHONY: api build gh_pages
 
-all: build gh_pages
+all: api build gh_pages
+
+api:
+	sphinx-apidoc -o docs/source/ ./pkg	
 
 build:
 	sphinx-build -b html ./docs ./docs/_build
