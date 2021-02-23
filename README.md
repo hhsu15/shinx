@@ -51,3 +51,31 @@ once that's done,
 3. Save it and it will take a few minutes to deploy to url.
 
 Refer to the Makefile for on-going auto-deplopy
+
+## Generate API docs
+
+In `conf.py` add:
+
+```python
+extensions = [
+    'sphinx.ext.napoleon',
+]
+```
+
+In the `docs` directory, run this command:
+
+```bash
+
+# sphinx-apidoc -o output_dir/ ../<package>
+# for example,
+sphinx-apidoc -o source/ ../pkg
+```
+
+This will only create the toctree directives.
+The API docs get generated when you run `sphinx-build -b html . ./_build`. You will have to make sure the modules in the package can be imported. Here I just hardcoded the path and added into sys.path. There should be a better way to do this. So finally, run
+
+```bash
+sphinx-build -b html . ./_build
+```
+
+Refer to `Makefile` for auto deployment.

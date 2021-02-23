@@ -7,6 +7,7 @@ gh_pages:
 	@echo "commit any changes before switching branch..."
 	git commit -am "add changes"
 	@echo "Updating gh-pages..."
+	#sphinx-apidoc -o ./docs/source/ ./pkg
 	git checkout gh-pages
 	cp -r docs/_build/* .; \
 	git add .; \

@@ -15,6 +15,11 @@ This is a test for sophinx documentation! Let's now test if the deployment works
    first_page
    second_page
 
+API docs
+=========
+.. toctree::
+   source/modules
+
 
 
 
