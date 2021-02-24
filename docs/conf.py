@@ -29,6 +29,9 @@ author = "hhsu15"
 # ones.
 extensions = [
     "sphinx.ext.napoleon",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.doctest",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -39,6 +42,13 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 napoleon_google_docstring = True
+napoleon_use_param = False
+napoleon_use_ivar = True
+napoleon_use_admonition_for_notes = True
+
+autoclass_content = "both"
+
+pygments_style = "sphinx"
 
 # -- Options for HTML output -------------------------------------------------
 
