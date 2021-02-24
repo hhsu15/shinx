@@ -8,6 +8,10 @@ Welcome to test's documentation!
 
 This is a test for sophinx documentation! Let's now test if the deployment works!
 
+This is done using ghp-import.
+
+Testing the path to see if it works...
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

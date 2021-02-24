@@ -1,6 +1,11 @@
-.PHONY: api build gh_pages
+.PHONY: clean api build gh_pages push
 
-all: api build gh_pages
+all: clean api build gh_pages push
+
+
+clean:
+	rm -rf docs/_build
+	rm -rf docs/source
 
 api:
 	sphinx-apidoc -o docs/source/ ./pkg	
@@ -8,11 +13,14 @@ api:
 build:
 	sphinx-build -b html ./docs ./docs/_build
 
-gh_pages:
-	@echo "Updating gh-pages..."
-	cp -r docs/_build/* ./gh-pages/sphinx
-	cd gh-pages/sphinx; \
-	git add .; \
-	git commit -m "upd"; \
-	git push
-	@echo "Deployed!"
+push:
+	ghp-import docs/_build -p -n
+
+# gh_pages:
+# 	@echo "Updating gh-pages..."
+# 	cp -r docs/_build/* ./gh-pages/sphinx
+# 	cd gh-pages/sphinx; \
+# 	git add .; \
+# 	git commit -m "upd"; \
+# 	git push
+# 	@echo "Deployed!"
