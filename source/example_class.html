@@ -179,28 +179,33 @@ function’s <code class="docutils literal notranslate"><span class="pre">Args</
 inline with the attribute’s declaration (see __init__ method below).</p>
 <p>Properties created with the <code class="docutils literal notranslate"><span class="pre">&#64;property</span></code> decorator should be documented
 in the property’s getter method.</p>
-<dl class="py attribute">
-<dt id="example_class.ExampleClass.attr1">
-<code class="sig-name descname"><span class="pre">attr1</span></code><a class="headerlink" href="#example_class.ExampleClass.attr1" title="Permalink to this definition">¶</a></dt>
-<dd><p>Description of <cite>attr1</cite>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p>str</p>
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attr1</strong> (<em>str</em>) – Description of <cite>attr1</cite>.</p></li>
+<li><p><strong>attr2</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – Description of <cite>attr2</cite>.</p></li>
+</ul>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt id="example_class.ExampleClass.attr2">
-<code class="sig-name descname"><span class="pre">attr2</span></code><a class="headerlink" href="#example_class.ExampleClass.attr2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Description of <cite>attr2</cite>.</p>
+<p>Example of docstring on the __init__ method.</p>
+<p>The __init__ method may be documented in either the class level
+docstring, or as a docstring on the __init__ method itself.</p>
+<p>Either form is acceptable, but the two should not be mixed. Choose one
+convention to document the __init__ method and be consistent with it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not include the <cite>self</cite> parameter in the <code class="docutils literal notranslate"><span class="pre">Args</span></code> section.</p>
+</div>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param1</strong> (<em>str</em>) – Description of <cite>param1</cite>.</p></li>
+<li><p><strong>param2</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, optional) – Description of <cite>param2</cite>. Multiple
+lines are supported.</p></li>
+<li><p><strong>param3</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Description of <cite>param3</cite>.</p></li>
+</ul>
 </dd>
 </dl>
-</dd></dl>
-
 <dl class="py attribute">
 <dt id="example_class.ExampleClass.attr3">
 <code class="sig-name descname"><span class="pre">attr3</span></code><a class="headerlink" href="#example_class.ExampleClass.attr3" title="Permalink to this definition">¶</a></dt>
